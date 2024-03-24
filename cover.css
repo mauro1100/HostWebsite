@@ -1,25 +1,61 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html, body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .form-signin {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
   max-width: 330px;
-  padding: 1rem;
+  padding: 20px;
+  margin: auto;
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+.form-signin .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.form-signin .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
 }
 
+.form-signin input[type="email"],
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.form-signin input[type="email"]:focus,
+.form-signin input[type="password"]:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Custom utilities */
+.bg-body-tertiary {
+  background-color: #ffffff;
+}
+
+.text-body-secondary {
+  color: #6c757d;
 }
